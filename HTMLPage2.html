@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página sobre Mangos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contenido {
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 10px;
+            animation: mover 5s infinite alternate;
+        }
+
+        @keyframes mover {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(50px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenido">
+        <h1>El Mango: La fruta tropical</h1>
+        <p>
+            El mango es una fruta tropical originaria del sur de Asia, especialmente de la India,
+            donde se cultiva desde hace miles de años. Su sabor dulce y jugoso lo convierte en
+            uno de los frutos más apreciados en todo el mundo. Además, existen múltiples variedades
+            que se diferencian en tamaño, color y textura. El mango no solo es delicioso, sino que
+            también es altamente nutritivo y beneficioso para la salud. Su consumo se ha extendido
+            a todos los continentes gracias a su versatilidad en la cocina.
+        </p>
+        <img src="mango1.jpg" alt="Mangos">
+    </div>
+
+    <div class="contenido">
+        <p>
+            El mango es rico en vitaminas A y C, esenciales para fortalecer el sistema inmunológico
+            y mantener la piel saludable. También contiene fibra, que ayuda a mejorar la digestión
+            y prevenir problemas intestinales. Su pulpa anaranjada es fuente de antioxidantes que
+            combaten los radicales libres en el organismo. Además, el mango aporta minerales como
+            potasio y magnesio, fundamentales para el buen funcionamiento del cuerpo. Por estas
+            razones, se considera una fruta que combina sabor y salud en cada bocado.
+        </p>
+        <img src="mangoarbol1.jpg" alt="Árbol de mango">
+    </div>
+
+    <!-- Video de YouTube -->
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/5yXdpVCmTGc"
+            title="Video sobre mangos" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+
+
+    <div class="contenido">
+        <p>
+            Además de consumirse fresco, el mango se utiliza en una gran variedad de preparaciones
+            culinarias. Se puede disfrutar en jugos, postres, ensaladas, salsas y hasta en platillos
+            salados. En muchos países, el mango es símbolo de abundancia y prosperidad. Su aroma
+            característico y su textura suave lo convierten en un ingrediente versátil y muy popular.
+            Gracias a su amplia disponibilidad, el mango se ha convertido en una fruta que une culturas
+            y tradiciones alrededor del mundo. Es, sin duda, un regalo de la naturaleza.
+        </p>
+        <img src="mangosplatillos1.jpg" alt="Platillos con mango">
+    </div>
+
+    <!-- Google Maps -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12041.123456789!2d-97.835!3d22.262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866f8f123456789%3A0x123456789abcdef!2sCiudad%20Madero%2C%20Tamaulipas!5e0!3m2!1ses!2smx!4v1700000000000"
+            width="600" height="450" allowfullscreen="" loading="lazy">
+    </iframe>
+
+    <h1>Formulario de Contacto</h1>
+
+    <!-- Este formulario abrirá el cliente de correo del usuario -->
+    <form action="mailto:tucorreo@dominio.com" method="post" enctype="text/plain">
+
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="Nombre" required><br><br>
+
+        <!-- Primer Apellido -->
+        <label for="apellido1">Primer Apellido:</label>
+        <input type="text" id="apellido1" name="Primer Apellido" required><br><br>
+
+        <!-- Segundo Apellido -->
+        <label for="apellido2">Segundo Apellido:</label>
+        <input type="text" id="apellido2" name="Segundo Apellido"><br><br>
+
+        <!-- Domicilio -->
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="Domicilio" required><br><br>
+
+        <!-- Sexo -->
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="Sexo" required>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="ninguno">Ninguno</option>
+        </select><br><br>
+
+        <!-- Película favorita -->
+        <label for="pelicula">Película favorita:</label>
+        <select id="pelicula" name="Película Favorita" required>
+            <option value="terminator">Terminator</option>
+            <option value="el_barco_fantasma">El Barco Fantasma</option>
+            <option value="robocop">Robocop</option>
+        </select><br><br>
+
+        <!-- Botones -->
+        <button type="submit">Enviar datos</button>
+        <button type="reset">Borrar datos</button>
+
+    </form>
+    <h2>Cuidemos Nuestro planeta</h2>
+
+    <form action="mailto:tu_correo@ejemplo.com" method="post" enctype="text/plain">
+        <label for="comentario">Escribe tu comentario:</label><br><br>
+        <textarea id="comentario" name="comentario" rows="6" cols="50" placeholder="Mi opinion respecto a la contaminacion es"></textarea><br><br>
+
+        <!-- Botón para enviar -->
+        <input type="submit" value="Enviar comentario">
+
+        <!-- Botón para borrar -->
+        <input type="reset" value="Borrar comentario">
+    </form>
+
+
+</body>
+</html>
